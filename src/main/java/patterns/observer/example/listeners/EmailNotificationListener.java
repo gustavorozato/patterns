@@ -1,7 +1,7 @@
 package patterns.observer.example.listeners;
 
 public class EmailNotificationListener implements EventListener {
-    private String email;
+    private final String email;
 
     public EmailNotificationListener(String email) {
         this.email = email;
