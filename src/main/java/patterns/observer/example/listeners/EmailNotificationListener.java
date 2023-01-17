@@ -1,7 +1,5 @@
 package patterns.observer.example.listeners;
 
-import java.io.File;
-
 public class EmailNotificationListener implements EventListener {
     private String email;
 
@@ -10,7 +8,7 @@ public class EmailNotificationListener implements EventListener {
     }
 
     @Override
-    public void update(String eventType, File file) {
-        System.out.println("Email to " + email + ": Someone has performed " + eventType + " operation with the following file: " + file.getName());
+    public void update(String eventType) {
+
     }
 }
